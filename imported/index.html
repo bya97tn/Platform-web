@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>accueil</title>
+		<script type="text/javascript" src="visibility.js"></script>
+		<style>
+			#logic1
+			{
+				width: 476px;
+				height: 500px;
+				border: 2px solid green;
+				position: absolute;
+				visibility: hidden;
+				
+			}
+			#logic2
+			{
+				width: 476px;
+				height: 500px;
+				border: 2px solid red;
+				position: absolute;
+				visibility: hidden;
+				
+			}
+			#logic3
+			{
+				width: 476px;
+				height: 500px;
+				border: 2px solid blue;
+				position: absolute;
+				visibility: hidden;
+				
+			}
+			.bouton
+			{
+        		color:#0000ff;
+        		font-size:24px;
+       			cursor:pointer;
+       			
+			}
+			.bouton:hover
+			{
+        		text-decoration:underline;
+        		
+			}
+			header
+			{
+				width: 1000px;
+				height: 150px;
+				position: relative;
+				left: 130px;
+				border: 2px outset black;	
+			}
+			nav
+			{
+				width: 1000px;
+				height: 40px;
+				position: relative;
+				left: 130px;
+				border: 2px outset black;
+				margin-top: 20px;
+			}
+			#corps
+			{
+				height: 500px;
+				width: 480px;
+				border: 2px dotted black;
+				position: relative;
+				left: 130px;
+				top: 25px;
+			}
+			#application
+			{
+				height: 500px;
+				width: 480px;
+				border: 2px dotted black;
+				position: relative;
+				left: 650px;
+				top: -480px;
+				
+			}
+			#app11
+			{
+				height: 500px;
+				width: 476px;
+				border: 2px solid purple;
+				visibility: hidden;
+				background-color: white;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<nav>
+			<span class="bouton" id="info" onclick="javascript:afficher('logic1');">info</span>
+			<span class="bouton" id="electro" onclick="javascript:affiche('logic2');">electro</span>
+			<span class="bouton" id="space" onclick="javascript:affichez('logic3');">espace</span>
+		</nav>
+		<section id="corps">
+			<article class="design" id="logic1">
+				<br/>
+				<span class="bouton" id="app1" onclick="afficher1('app11');">app1</span>
+				<div id="bull1"></div>
+			</article>
+			<article class="design" id="logic2">
+			</article>
+			<article class="design" id="logic3">
+			</article>
+		</section>
+			
+		<section id="application">
+			<article class="apps" id="app11">
+			<form method="post" action="index.html">
+				<input type="text" id="champcd">
+				<input type="text" id="champp">
+				<input type="text" id="champs">
+				<input type="text" id="champv">
+				<input type="button" onclick="calcull()" value="calcul">
+			</form>
+			<div id="result"> </div>	
+			</article>	
+		</section>
+	</body>
+</html>

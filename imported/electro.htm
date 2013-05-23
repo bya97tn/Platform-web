@@ -1,0 +1,77 @@
+<!Doctype HTML>
+<meta charset= 'UTF-8'>
+<html>
+	<head>
+		<title>Stage2013</title>
+		<script type="text/javascript"  src="code_resis.js"></script>
+		<style>
+				select{
+					 background-image: url(images/select-arrow.png), 
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+				}
+				option{
+				border-radius:10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h3>Choisissez les couleurs des anneaux</h3>
+		</header>
+		<article>
+			<section>
+				<b>  anneau 1 </b> 
+				<select id='selection1' style="width: 70px">
+					<option style="background-color: #582900" > marron</option>
+					<option style="background-color: #FF0000"> rouge</option>
+					<option style="background-color: orange"> orangé</option>
+					<option style="background-color: yellow"> jaune</option>
+					<option style="background-color: green" > vert </option>
+					<option style="background-color: blue"> bleu</option>
+					<option style="background-color: #660099">violet </option>
+					<option style="background-color: #606060">gris </option>
+					<option style="background-color: white"> blanc</option>
+				</select>
+				<br />
+				<b>  anneau 2 </b>
+				<select id='selection2' style="width: 70px">
+					<option style="background-color: black"> noir </option>
+					<option style="background-color: #582900"> marron</option>
+					<option style="background-color: #FF0000" > rouge</option>
+					<option style="background-color: orange" > orangé</option>
+					<option style="background-color: yellow"> jaune</option>
+					<option style="background-color: green" > vert </option>
+					<option style="background-color: blue"> bleu</option>
+					<option style="background-color: #660099">violet </option>
+					<option style="background-color: #606060" >gris </option>
+					<option style="background-color: white"> blanc</option>
+				</select>
+				<br />
+				<b>  anneau 3 </b>
+				<select id='selection3'style="width:70px;">
+					<option style="background-color: black"> noir </option>
+					<option style="background-color: #582900" > marron</option>
+					<option style="background-color: #FF0000"> rouge</option>
+					<option style="background-color: orange"> orangé</option>
+					<option style="background-color: yellow"> jaune</option>
+					<option style="background-color: green"> vert </option>
+					<option style="background-color: blue" > bleu</option>
+					<option style="background-color: #DFAF2C"> or </option>
+				</select>
+				<br />
+				<b>  anneau 4 </b>
+				<select id='selection4' style="width: 70px">
+					<option style="background-color: #CECECE" value="10%"> argent </option>
+					<option style="background-color: #DFAF2C" value="5%"> or </option>
+
+				</select>
+				<br />
+				<input type="button" value="calculer" onclick="code();">
+			</section>
+			<div id="result"> </div>
+			
+		</article>
+	</body>
+</html>
